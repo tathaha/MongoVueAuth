@@ -9,7 +9,7 @@ app.use(bodyParser.json())
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }))
 
-const mongoURI = 'mongodb+srv://chiraitori:<password>@cluster0.hffrvtj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+const mongoURI = 'mongodb+srv://chiraitori:chiraitori@cluster0.hffrvtj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 
 mongoose.connect(mongoURI, { useNewUrlParser: true })
     .then(() => console.log("MongoDB Connected"))
